@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp" >
+
+        <ImageView
+            android:id="@+id/imageTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/changeImageTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Change"
+            android:background="#8f9ea3"
+            android:padding="8dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"/>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        >
+
+        <TextView
+            android:id="@+id/usernameEt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Username"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/resultUsernameEt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/usernameEt"
+            android:paddingTop="16dp"
+            android:text="Dicky"
+            android:textSize="16dp"
+            android:visibility="visible"/>
+
+        <EditText
+            android:id="@+id/editUsernameEt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:layout_toRightOf="@+id/usernameEt"
+            android:text="Hello"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnChangeEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="17dp"
+            android:text="Change"
+            android:textColor="@color/white"
+            android:visibility="visible"/>
+            style="@style/TextAppearance.MaterialComponents.Caption"/>
+        <Button
+            android:id="@+id/btnChangeUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="17dp"
+            android:text="Update"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            style="@style/TextAppearance.MaterialComponents.Caption"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:id="@+id/emailEt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Email"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/resultEmailEt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/emailEt"
+            android:paddingTop="16dp"
+            android:text="alfattahdicky2@gmail.com"
+            android:textSize="16dp"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentRight="true"
+        android:text="Logout"/>
+
+
+
+</LinearLayout>
